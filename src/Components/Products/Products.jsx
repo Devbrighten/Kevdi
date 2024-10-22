@@ -1,7 +1,6 @@
 import React, { } from 'react';
 import Navbar from '../Navbar';
 import { tomato, potato, onion } from '../Images/Image';
-import { GiAppleSeeds } from "react-icons/gi";
 import ButtonElement from '../Elements/ButtonElement';
 import Footer from '../Footer/Footer';
 import WhatsappIcon from '../Elements/WhatsappIcon';
@@ -35,7 +34,7 @@ const Products = () => {
     ];
 
     const handleBuyNowClick = (item) => {
-        console.log("Button clicked for:", item); 
+        console.log("Button clicked for:", item);
         try {
             Navigate(`/products/${item.id}`, { state: item });
         } catch (error) {
@@ -47,8 +46,8 @@ const Products = () => {
         <>
             <Navbar />
             <div className="container relative ">
-                <h2 className="text-4xl font-poppins font-semibold text-gray_text mt-20 mb-10 flex items-center gap-2 pl-4 2xl:pl-0 lg:mb-16 xl:justify-start justify-center">
-                    <GiAppleSeeds className='text-primaryGreen' /> Featured Products
+                <h2 className="text-4xl font-poppins font-semibold text-gray_text mt-20 mb-10 flex items-center gap-2 pl-4 2xl:pl-6 lg:mb-16 xl:justify-start justify-center">
+                    Featured Products
                 </h2>
                 <div className="flex justify-center gap-10 flex-wrap items-center">
                     {product.map((item, index) => (
@@ -67,7 +66,7 @@ const Products = () => {
                                 <div className="flex justify-between pt-5 pb-2">
                                     <h4 className='text-[24px] font-semibold text-seconderyGreen'>{item.price}</h4>
                                     <ButtonElement text='Buy Now' onClick={() => handleBuyNowClick(item)} />
-                                    
+
                                 </div>
                             </div>
                         </div>

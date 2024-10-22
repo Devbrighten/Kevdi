@@ -24,7 +24,7 @@ const Navbar = () => {
 
     return (
         <div>
-            <div className="container py-[25px] px-7 2xl:px-0 flex justify-between items-center border-b">
+            <div className="container sm:py-[25px] py-[12px] px-7 2xl:px-0 flex justify-between items-center border-b">
                 <Link to="/" className='w-20 flex items-center justify-center bg-transparent z-10'>
                     <img src={logo} alt="Logo" className="mix-blend-screen" />
                 </Link>

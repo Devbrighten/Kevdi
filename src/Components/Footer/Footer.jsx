@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { GiAppleSeeds } from "react-icons/gi";
+import {logo} from '../Images/Image'
 
 const Footer = () => {
     return (
@@ -8,9 +8,9 @@ const Footer = () => {
             <footer className='mt-10 p-5 text-white text-center bottom-0 w-[100%] lg:bottom-0 bg-gradient ' >
                 <div className='flex sm:flex-row justify-start flex-col gap-[15px] sm:gap-0 sm:justify-between items-start sm:items-center container'>
                     <div>
-                        <h2 className='sm:text-[35px] text-[22px] font-bold mb-2 flex items-center gap-2 justify-center sm:justify-start'>
-                            <GiAppleSeeds className='' /> KEVDI
-                        </h2>
+                      
+                        <img src={logo} alt=""  className='green-image w-16 mb-4    '/> 
+                        
                         <p className='mb-1'>Lorem ipsum dolor sit amet. <br />Lorem ipsum dolor sit amet. <br />Lorem ipsum dolor sit amet.</p>
                         <div className='flex gap-x-3 mt-3'>
                             <Link to="" className='text-[29px] hover:text-gray-200 transition duration-300'><i className="fa fa-facebook-official" aria-hidden="true"></i></Link>

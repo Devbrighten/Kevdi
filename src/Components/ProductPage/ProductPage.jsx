@@ -3,6 +3,7 @@ import { useLocation } from 'react-router-dom';
 import Navbar from '../Navbar';
 import Footer from '../Footer/Footer';
 import ButtonElement from '../Elements/ButtonElement';
+import WhatsappIcon from '../Elements/WhatsappIcon';
 
 const ProductPage = () => {
     const { state } = useLocation();
@@ -46,6 +47,7 @@ const ProductPage = () => {
                 </div>
             </div>
             <Footer />
+            <WhatsappIcon/>
         </div>
     );
 }

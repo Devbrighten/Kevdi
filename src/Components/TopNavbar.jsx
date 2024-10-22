@@ -7,7 +7,7 @@ const TopNavbar = () => {
 
                 {/* Email Section */}
                 <div className='flex items-center gap-[5px]'>
-                    <a href="mailto:mail@ankitchaudhari.info" className="flex items-center gap-[5px]">
+                    <a href=" " className="flex items-center gap-[5px]">
                         <p className='text-white sm:text-[25px]'>
                             <i className="fa fa-envelope" aria-hidden="true"></i>
                         </p>
@@ -17,18 +17,17 @@ const TopNavbar = () => {
 
                 {/* Phone number Section */}
                 <div className='flex items-center gap-[5px]'>
-                    <a href="tel:+919974870436" className="flex items-center gap-[5px]">
+                    <a href=" " className="flex items-center gap-[5px]">
                         <p className='text-white sm:text-[25px]'>
                             <i className="fa fa-phone-square" aria-hidden="true"></i>
                         </p>
-                        <p className='text-white  sm:text-[18px] '> +91 8756932121 </p>
+                        <p className='text-white  sm:text-[18px] '> +91 987654321 </p>
                     </a>
                 </div>
 
                 {/* Whatsapp Section */}
                 <div className='flex items-center justify-center gap-[5px]'>
-                    <a href="
-                     https://wa.me/919974870436"
+                    <a href=" "
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex items-center gap-[5px]">
