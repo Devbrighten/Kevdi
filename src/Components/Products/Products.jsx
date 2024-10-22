@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { } from 'react';
 import Navbar from '../Navbar';
-import { tomato, potato, onion, } from '../Images/Image'; // Add hover images
+import { tomato, potato, onion } from '../Images/Image';
 import ButtonElement from '../Elements/ButtonElement';
 import Footer from '../Footer/Footer';
 import WhatsappIcon from '../Elements/WhatsappIcon';
@@ -13,7 +13,6 @@ const Products = () => {
         {
             id: 1,
             image: tomato,
-            hoverImage: onion, // Add hover image
             name: 'Tomato',
             info: 'Shop our fresh, premium tomatoes—perfect for salads, sauces, and cooking. Packed with vitamins and antioxidants, they add flavor and health to your meals!',
             price: '50/kg'
@@ -21,7 +20,6 @@ const Products = () => {
         {
             id: 2,
             image: potato,
-            hoverImage: onion, // Add hover image
             name: 'Potato',
             info: 'Discover our fresh, high-quality potatoes, ideal for baking, frying, and mashing. Packed with nutrients and versatility, our potatoes enhance any meal.',
             price: '35/kg'
@@ -29,7 +27,6 @@ const Products = () => {
         {
             id: 3,
             image: onion,
-            hoverImage: potato, // Add hover image
             name: 'Onion',
             info: 'Explore our fresh, flavorful onions, perfect for adding depth to any dish. Packed with nutrients, they enhance salads, soups, and more.',
             price: '70/kg'
@@ -37,6 +34,7 @@ const Products = () => {
     ];
 
     const handleBuyNowClick = (item) => {
+        console.log("Button clicked for:", item);
         try {
             Navigate(`/products/${item.id}`, { state: item });
         } catch (error) {
@@ -52,42 +50,36 @@ const Products = () => {
                     Featured Products
                 </h2>
                 <div className="flex justify-center gap-10 flex-wrap items-center">
-  {product.map((item, index) => (
-    <div
-      key={index}
-      className="card relative mx-4 sm:px-0 transition-transform duration-300 transform hover:shadow-lg shadow hover:scale-105"
-    >
-      <div className="overflow-hidden rounded-lg relative">
-        {/* Image Slide Effect */}
-        <div className="relative h-[255px] w-[380px]">
-          <img
-            src={item.image}
-            alt={item.name}
-            className="absolute inset-0 w-full h-full object-cover transition-opacity duration-300"
-          />
-        </div>
-        {/* Color Overlay */}
-        <div className="absolute inset-0 bg-black opacity-0 hover:opacity-40 transition-opacity duration-300 flex items-center justify-center">
-          {/* <span className="text-white text-lg font-semibold">Featured</span> */}
-        </div>
-      </div>
-      <div className="py-4 px-4">
-        <p className='text-seconderyGreen font-poppins text-[35px] font-medium mt-1 mb-4'>{item.name}</p>
-        <p className='text-lg font-normal w-full max-w-[350px]'>{item.info}</p>
-        <div className="flex justify-between pt-5 pb-2">
-          <h4 className='text-[24px] font-semibold text-seconderyGreen'>{item.price}</h4>
-          <ButtonElement text='View Product' onClick={() => handleBuyNowClick(item)} />
-        </div>
-      </div>
-    </div>
-  ))}
-</div>
+                    {product.map((item, index) => (
+                        <div key={index} className="card  relative mx-4 sm:px-0 transition-transform duration-300 hover:shadow-lg shadow">
+                            <div className="overflow-hidden rounded-lg relative">
+                                <img
+                                    src={item.image}
+                                    alt={item.name}
+                                    className='w-[380px] h-[255px] object-cover transition-transform duration-300 transform hover:-translate-y-4'
+                                />
+                                {/* Color Overlay */}
+                                <div className="absolute inset-0 bg-black opacity-0 hover:opacity-30 transition-opacity duration-300 flex items-center justify-center">
+                                    {/* <span className="text-white text-lg font-semibold">Featured</span> */}
+                                </div>
+                            </div>
+                            <div className="py-4 px-4">
+                                <p className='text-seconderyGreen font-poppins text-[35px] font-medium mt-1 mb-4'>{item.name}</p>
+                                <p className='text-lg font-normal w-full max-w-[350px]'>{item.info}</p>
+                                <div className="flex justify-between pt-5 pb-2">
+                                    <h4 className='text-[24px] font-semibold text-seconderyGreen'>{item.price}</h4>
+                                    <ButtonElement text='Buy Now' onClick={() => handleBuyNowClick(item)} />
+                                </div>
+                            </div>
+                        </div>
+                    ))}
+                </div>
 
 
             </div>
             <div className="py-10 mt-20 relative">
                 <div className="container mx-auto px-5">
-                    <div className="flex flex-col justify-center items-center mb-16 ">
+                    <div className="flex flex-col justify-center items-center mb-16">
                         <h2 className='text-gray_text text-2xl text-center pb-1 font-poppins'> Shop Smart, Shop Secure!</h2>
                         <div className="border-b w-full max-w-60 border-seconderyGreen"></div>
                     </div>

@@ -9,7 +9,7 @@ const Footer = () => {
                 <div className='flex sm:flex-row justify-start flex-col gap-[15px] sm:gap-0 sm:justify-between items-start sm:items-center container'>
                     <div>
                         <img src={logo} alt="Company Logo" className='green-image w-16 mb-4' />
-                        <p className='mb-1 w-80 text-start'>
+                        <p className='mb-1 max-w-80 text-start'>
                             Discover the freshest and finest quality produce delivered right to your doorstep.
                              Select from an extensive variety of vegetables at unbeatable prices.
                              We prioritize your satisfaction above all else!
