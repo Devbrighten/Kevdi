@@ -63,3 +63,16 @@ button:hover span:first-child {
 .green-image{
     filter: invert(100%) brightness(3);
 }
+
+
+ /* product card hover  */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-25px); /* Adjust the value as needed */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Adjust the shadow as needed */
+  }
+
+
