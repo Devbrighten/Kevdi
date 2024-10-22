@@ -1,31 +1,41 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { logo } from '../Images/Image';
-
+import { FaWhatsappSquare } from "react-icons/fa";
+import { FaInstagramSquare } from "react-icons/fa";
+import { FaSquareXTwitter } from "react-icons/fa6";
 const Footer = () => {
     return (
         <div>
             <footer className='mt-10 p-5 text-white text-center bottom-0 w-[100%] lg:bottom-0 bg-gradient'>
                 <div className='flex sm:flex-row justify-start flex-col gap-[15px] sm:gap-0 sm:justify-between items-start sm:items-center container'>
                     <div>
-                        <img src={logo} alt="Company Logo" className='green-image w-16 mb-4' />
+                        <img src={logo} alt="Company Logo" className='green-image w-20 mb-4' />
                         <p className='mb-1 max-w-80 text-start'>
                             Discover the freshest and finest quality produce delivered right to your doorstep.
-                             Select from an extensive variety of vegetables at unbeatable prices.
-                             We prioritize your satisfaction above all else!
+                            Select from an extensive variety of vegetables at unbeatable prices.
+                            We prioritize your satisfaction above all else!
                         </p>
-                        <div className='flex gap-x-3 mt-3'>
-                            <Link to="" className='text-[29px] hover:text-gray-200 transition duration-300'>
-                                <i className="fa fa-facebook-official" aria-hidden="true"></i>
+                        <div className='flex items-center gap-x-3 mt-3'>
+                            <Link to="" className='text-[28px] relative group'>
+                                <i className="fa fa-facebook-official group-hover:translate-y-[-5px]  transition-transform duration-300 ease-in-out" aria-hidden="true"></i>
                             </Link>
-                            <Link to="" className='text-[29px] hover:text-gray-200 transition duration-300'>
-                                <i className="fa fa-twitter" aria-hidden="true"></i>
+                            <Link to="" className='text-[28px] relative group mt-[3px]'>
+                                <FaSquareXTwitter className='group-hover:translate-y-[-5px] transition-transform duration-300 ease-in-out' />
                             </Link>
-                            <Link to="" className='text-[29px] hover:text-gray-200 transition duration-300'>
-                                <i className="fa fa-linkedin-square" aria-hidden="true"></i>
+                            <Link to="" className='text-[29px] relative group'>
+                                <i className="fa fa-linkedin-square group-hover:translate-y-[-5px] transition-transform duration-300 ease-in-out" aria-hidden="true"></i>
+                            </Link>
+                            <Link to="https://wa.me/919429948500" className='text-[29px] relative group mt-[2px]'>
+                                <FaWhatsappSquare className='group-hover:translate-y-[-5px] transition-transform duration-300 ease-in-out' />
+                            </Link>
+                            <Link to="" className='text-[29px] relative group mt-[1px]'>
+                                <FaInstagramSquare className='group-hover:translate-y-[-5px] transition-transform duration-300 ease-in-out' />
+
                             </Link>
                         </div>
                     </div>
+
 
 
                     <div className='flex flex-col items-start'>
@@ -43,8 +53,8 @@ const Footer = () => {
                     <div className='flex flex-col items-start mt-[10px]'>
                         <h2 className='sm:text-lg text-[22px] font-bold mb-2'>Contact Us</h2>
                         <div className='flex flex-col gap-y-2 text-start'>
-                            <p className='hover:text-gray-200 transition duration-200 cursor-pointer'>+91 9974870436</p>
-                            <p className='hover:text-gray-200 transition duration-200 cursor-pointer'>support@veggieshop.com</p>
+                            <p className='hover:text-gray-200 transition duration-200 cursor-pointer'>+91 9429948500</p>
+                            <p className='hover:text-gray-200 transition duration-200 cursor-pointer'>Sales@kevdiindustries.in</p>
                             {/* <p className='hover:text-gray-200 transition duration-200 cursor-pointer'>123, Fresh Street, New York, USA</p> */}
                         </div>
                     </div>

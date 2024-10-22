@@ -7,9 +7,9 @@ import WhatsappIcon from '../Elements/WhatsappIcon';
 
 const ProductPage = () => {
     const { state } = useLocation();
-    const whatsappLink = `https://www.whatsapp.com/`
+    const whatsappLink = `https://wa.me/919429948500`;
     return (
-        <div className="bg-gray-100">
+        <div className="">
             <Navbar />
             <div className="mx-5 pt-20">
                 <div className="container py-7 px-5 flex flex-col md:flex-row bg-white p-6 mt-10 rounded-lg shadow ">

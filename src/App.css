@@ -62,6 +62,7 @@ button:hover span:first-child {
 
 .green-image{
     filter: invert(100%) brightness(3);
+    mix-blend-mode: screen;
 }
 
 

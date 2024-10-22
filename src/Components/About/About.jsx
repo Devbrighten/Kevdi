@@ -6,7 +6,7 @@ import video2 from '../Images/video2.mp4'
 
 const About = () => {
     return (
-        <div className="bg-gray-50">
+        <div className="">
             <Navbar />
             <div className="container mx-auto py-12 px-6 md:px-12">
                 <h1 className="text-5xl font-poppins font-semibold text-seconderyGreen mb-20 text-center">About Us</h1>
@@ -14,7 +14,7 @@ const About = () => {
                     <div className="lg:w-1/2 mb-8">
                         <h2 className="text-3xl font-semibold  mb-4 text-seconderyGreen">Who We Are</h2>
                         <p className="text-lg text-gray-700 mb-4">
-                            At <strong>KEVDI</strong>, we are passionate about providing high-quality organic food that
+                            At <strong>KEVDI INDUSTRIES</strong>, we are passionate about providing high-quality organic food that
                             nourishes both body and soul. Our focus is on delivering fresh produce straight from local
                             farms, ensuring every bite is packed with flavor and nutrients.
                         </p>
@@ -47,7 +47,7 @@ const About = () => {
                 <h2 className="text-3xl font-semibold  mb-4 text-seconderyGreen">Join Us</h2>
                 <p className="text-lg text-gray-700 mb-4">
                     We invite you to join us on this journey towards better health and delicious meals. Explore our
-                    range of organic products and become a part of the <strong>KEVDI</strong> family.
+                    range of organic products and become a part of the <strong>KEVDI INDUSTRIES</strong> family.
                 </p>
                 <p className="text-lg text-gray-700 mb-4">
                     Thank you for choosing us—where quality meets integrity!

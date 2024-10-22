@@ -19,7 +19,7 @@ const App = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsReady(true);
-    }, 2000); // 2 seconds
+    }, 600); // 2 seconds
 
     return () => clearTimeout(timer); // Cleanup the timer when the component unmounts
   }, []);

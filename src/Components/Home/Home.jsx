@@ -13,8 +13,7 @@ const Home = () => {
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
-        height: '92.5vh', // Full viewport height
-        width: '100vw',
+        height: '100vh', // Full viewport height
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',

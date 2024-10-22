@@ -11,7 +11,7 @@ const TopNavbar = () => {
                         <p className='text-white sm:text-[25px]'>
                             <i className="fa fa-envelope" aria-hidden="true"></i>
                         </p>
-                        <p className='text-white   sm:text-[20px] '>  adminUsertest1234@gmail.com</p>
+                        <p className='text-white   sm:text-[20px] '> Sales@kevdiindustries.in</p>
                     </a>
                 </div>
 
@@ -21,13 +21,13 @@ const TopNavbar = () => {
                         <p className='text-white sm:text-[25px]'>
                             <i className="fa fa-phone-square" aria-hidden="true"></i>
                         </p>
-                        <p className='text-white  sm:text-[18px] '> +91 987654321 </p>
+                        <p className='text-white  sm:text-[18px] '> +91 9429948500 </p>
                     </a>
                 </div>
 
                 {/* Whatsapp Section */}
                 <div className='flex items-center justify-center gap-[5px]'>
-                    <a href=" "
+                    <a href="https://wa.me/919429948500"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex items-center gap-[5px]">

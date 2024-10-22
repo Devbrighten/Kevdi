@@ -6,7 +6,7 @@ import ButtonElement from '../Elements/ButtonElement';
 
 const Contact = () => {
     return (
-        <div className="bg-gray-50">
+        <div className="">
             <Navbar />
             <h1 className="text-5xl font-semibold font-poppins  text-center my-10 text-seconderyGreen">Contact us</h1>
             <div className="container mx-auto py-12 px-6 md:px-12 flex justify-between md:flex-row flex-col items-center md:items-start gap-16">
@@ -17,9 +17,9 @@ const Contact = () => {
                         We would love to hear from you! Whether you have questions about our products, need assistance, or just want to say hello, feel free to reach out to us.
                     </p>
                     <h3 className="text-2xl font-medium font-poppins text-seconderyGreen mt-10 mb-3">Contact Information</h3>
-                    <p className="text-lg text-gray-700 mb-2"><strong>Email:</strong> support@kevdifoods.com</p>
-                    <p className="text-lg text-gray-700 mb-2"><strong>Phone:</strong> +1 (123) 456-7890</p>
-                    <p className="text-lg text-gray-700 mb-2"><strong>Address:</strong> 123 Organic St, Fresh City, CA 90001</p>
+                    <p className="text-lg text-gray-700 mb-2"><strong>Email:</strong> Sales@kevdiindustries.in</p>
+                    <p className="text-lg text-gray-700 mb-2"><strong>Phone:</strong> +919429948500</p>
+                    {/* <p className="text-lg text-gray-700 mb-2"><strong>Address:</strong> 123 Organic St, Fresh City, CA 90001</p> */}
                 </div>
 
                 <div className="md:w-1/2 w-full">
