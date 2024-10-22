@@ -14,6 +14,9 @@ module.exports = {
       backgroundImage: {
         'gradient': 'radial-gradient(circle, #427921, #3e771d)',
       },
+      fontFamily:{
+       poppins:'"Poppins", sans-serif'
+      },
     },
   },
   plugins: [],

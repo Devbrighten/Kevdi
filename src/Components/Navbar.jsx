@@ -25,7 +25,7 @@ const Navbar = () => {
     return (
         <div>
             <div className="container py-[25px] px-7 2xl:px-0 flex justify-between items-center border-b">
-                <Link to="/" className='w-20 flex items-center justify-center bg-transparent'>
+                <Link to="/" className='w-20 flex items-center justify-center bg-transparent z-10'>
                     <img src={logo} alt="Logo" className="mix-blend-screen" />
                 </Link>
                 <div className="lg:hidden">
@@ -36,7 +36,7 @@ const Navbar = () => {
                 <div className={`hidden lg:flex`}>
                     <ul className='flex gap-4 font-semibold text-xl'>
                         {menuItem.map((item, index) => (
-                            <li key={index} className='lg:text-[18px] md:text-[16px] font-semibold text-gray_text hover:underline  duration-300'>
+                            <li key={index} className='lg:text-[18px] md:text-[16px] font-semibold text-gray_text hover:underline font-poppins   duration-300'>
                                 <NavLink
                                     to={item.path}
                                     className={({ isActive }) => (isActive ? 'text-seconderyGreen' : 'text-gray_text')}

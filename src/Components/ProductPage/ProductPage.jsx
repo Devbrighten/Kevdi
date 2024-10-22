@@ -21,7 +21,7 @@ const ProductPage = () => {
                         />
                     </div>
                     <div className="md:w-1/2 md:pl-10 flex flex-col justify-around">
-                        <h1 className="text-4xl font-bold text-gray-800 mb-2  mt-4">{state.name}</h1>
+                        <h1 className="text-4xl font-bold text-gray-800 mb-2 font-poppins  mt-4">{state.name}</h1>
                         <p className="text-lg text-gray-600  mb-4 ">{state.info}</p>
                         <div className="">
                             <ul className="list-disc list-inside text-lg text-gray-600 space-y-2  mb-4">

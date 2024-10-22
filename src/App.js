@@ -10,7 +10,7 @@ const Products = lazy(() => import('./Components/Products/Products'));
 const ProductPage = lazy(() => import('./Components/ProductPage/ProductPage'));
 const About = lazy(() => import('./Components/About/About'));
 const Contact = lazy(() => import('./Components/Contact/Contact'));
-const Service = lazy(() => import('./Components/Service/Service'));
+// const Service = lazy(() => import('./Components/Service/Service'));
 
 const App = () => {
   const [isReady, setIsReady] = useState(false);

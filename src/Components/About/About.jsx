@@ -9,7 +9,7 @@ const About = () => {
         <div className="bg-gray-50">
             <Navbar />
             <div className="container mx-auto py-12 px-6 md:px-12">
-                <h1 className="text-5xl font-bold text-seconderyGreen mb-20 text-center">About Us</h1>
+                <h1 className="text-5xl font-poppins font-semibold text-seconderyGreen mb-20 text-center">About Us</h1>
                 <div className="flex flex-col lg:flex-row md:space-x-8">
                     <div className="lg:w-1/2 mb-8">
                         <h2 className="text-3xl font-semibold  mb-4 text-seconderyGreen">Who We Are</h2>

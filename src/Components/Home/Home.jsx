@@ -21,7 +21,7 @@ const Home = () => {
       }}
     >
       <div className="container">
-        <div className="flex flex-col justify-center items-center">
+        <div className="flex flex-col justify-center items-center font-poppins">
           <Link to='products'>
             <h1 className='text-[50px] font-semibold text-white mb-3 px-5 ' >DISCOVER OUR PRODUCTS</h1>
             <p className=' text-white flex flex-row justify-center items-center gap-2 font-medium text-2xl px-5 '>
