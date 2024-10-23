@@ -19,20 +19,15 @@ const App = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsReady(true);
-    }, 600); // 2 seconds
+    }, 600); 
 
     return () => clearTimeout(timer); // Cleanup the timer when the component unmounts
   }, []);
 
   return (
     <Router>
-      {/* Scroll to the top when the component mounts (page change) */}
       <ScrollTop /> 
-
-
-
       <TopNavbar />
-      {/* Conditionally render components after 2 seconds */}
       {isReady ? (
         <Suspense fallback={<Loader />}>
           <Routes>

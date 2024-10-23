@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import Navbar from '../Navbar';
 import Footer from '../Footer/Footer';
 import ButtonElement from '../Elements/ButtonElement';
@@ -25,15 +25,13 @@ const ProductPage = () => {
                         <p className="text-lg text-gray-600  mb-4 ">{state.info}</p>
                         <div className="">
                             <ul className=" list-inside text-lg text-gray-600 space-y-2  mb-4">
-                                <li>✓ Free Worldwide Shipping</li>
-                                <li>✓ 30 Days Return</li>
+                                <li>✓ Free  Shipping</li>
+                                <li>✓ 3 Days Return</li>
                                 <li>✓ Member Discount</li>
                             </ul>
                         </div>
                         <p className="text-2xl font-semibold text-seconderyGreen mb-8">{state.price}</p>
-
                         <ButtonElement text='Buy Now' onClick={() => window.open(whatsappLink)} />
-
                     </div>
                 </div>
             </div>
@@ -41,7 +39,7 @@ const ProductPage = () => {
                 <div className="container bg-white p-6 shadow rounded-lg">
                     <h2 className="text-2xl font-semibold text-seconderyGreen mb-4">Why Choose Our Products?</h2>
                     <ul className="list-disc list-inside text-lg text-gray-600 space-y-2">
-                        <li>100% Organic Food from Farm Hong Quat Packaging</li>
+                        <li>100% Organic Food from Farm </li>
                         <li>100% Organic Food</li>
                         <li>100% Fresh, No Chemicals</li>
                     </ul>

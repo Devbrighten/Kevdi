@@ -7,7 +7,7 @@ const TopNavbar = () => {
 
                 {/* Email Section */}
                 <div className='flex items-center gap-[5px]'>
-                    <a href=" " className="flex items-center gap-[5px]">
+                    <a href="mailto:Sales@kevdiindustries.in" className="flex items-center gap-[5px]">
                         <p className='text-white sm:text-[25px]'>
                             <i className="fa fa-envelope" aria-hidden="true"></i>
                         </p>
@@ -17,7 +17,7 @@ const TopNavbar = () => {
 
                 {/* Phone number Section */}
                 <div className='flex items-center gap-[5px]'>
-                    <a href=" " className="flex items-center gap-[5px]">
+                    <a href=" tel:+919429948500" className="flex items-center gap-[5px]">
                         <p className='text-white sm:text-[25px]'>
                             <i className="fa fa-phone-square" aria-hidden="true"></i>
                         </p>

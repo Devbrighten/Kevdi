@@ -15,7 +15,8 @@ module.exports = {
         'gradient': 'radial-gradient(circle, #427921, #3e771d)',
       },
       fontFamily:{
-       poppins:'"Poppins", sans-serif'
+       poppins:'"Poppins", sans-serif',
+       
       },
     },
   },

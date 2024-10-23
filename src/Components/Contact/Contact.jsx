@@ -17,8 +17,13 @@ const Contact = () => {
                         We would love to hear from you! Whether you have questions about our products, need assistance, or just want to say hello, feel free to reach out to us.
                     </p>
                     <h3 className="text-2xl font-medium font-poppins text-seconderyGreen mt-10 mb-3">Contact Information</h3>
-                    <p className="text-lg text-gray-700 mb-2"><strong>Email:</strong> Sales@kevdiindustries.in</p>
-                    <p className="text-lg text-gray-700 mb-2"><strong>Phone:</strong> +919429948500</p>
+
+                    <a href="mailto:Sales@kevdiindustries.in" className="text-lg text-gray-700 mb-2">
+                        <p className="cursor-pointer"><strong>Email:</strong> Sales@kevdiindustries.in</p>
+                    </a>
+
+
+                    <p className="text-lg text-gray-700 mb-2"><strong>Phone:</strong> +91 9429948500</p>
                     {/* <p className="text-lg text-gray-700 mb-2"><strong>Address:</strong> 123 Organic St, Fresh City, CA 90001</p> */}
                 </div>
 
@@ -58,7 +63,7 @@ const Contact = () => {
 
                             ></textarea>
                         </div>
-                      <ButtonElement text='Send Message'/>
+                        <ButtonElement text='Send Message' />
                     </form>
                 </div>
             </div>

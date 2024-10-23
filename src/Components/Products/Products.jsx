@@ -29,12 +29,11 @@ const Products = () => {
             image: onion,
             name: 'Onion',
             info: 'Explore our fresh, flavorful onions, perfect for adding depth to any dish. Packed with nutrients, they enhance salads, soups, and more.',
-            price: '70/kg'
+            price: '70/kg',
         },
     ];
 
     const handleBuyNowClick = (item) => {
-        console.log("Button clicked for:", item);
         try {
             Navigate(`/products/${item.id}`, { state: item });
         } catch (error) {
@@ -68,14 +67,13 @@ const Products = () => {
                                 <p className='text-lg font-normal w-full max-w-[350px]'>{item.info}</p>
                                 <div className="flex justify-between pt-5 pb-2">
                                     <h4 className='text-[24px] font-semibold text-seconderyGreen'>{item.price}</h4>
-                                    <ButtonElement text='Buy Now' onClick={() => handleBuyNowClick(item)} />
+                                    <ButtonElement text='View Product' onClick={() => handleBuyNowClick(item)} />
                                 </div>
                             </div>
                         </div>
                     ))}
                 </div>
-
-
+                
             </div>
             <div className="py-10 mt-20 relative">
                 <div className="container mx-auto px-5">
