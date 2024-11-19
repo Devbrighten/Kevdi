@@ -6,7 +6,7 @@ import { homeBg } from '../Images/Image';
 
 const Home = () => {
   return (
-    <div className='home-no-scroll'
+    <div className=''
       style={{
         backgroundImage: `linear-gradient(90deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8)),
           url(${homeBg})`,
